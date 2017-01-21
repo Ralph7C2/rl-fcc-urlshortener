@@ -74,7 +74,7 @@ app.get('/new/*', function(req, res) {
 		onNumber++;
 		res.json({
 			original_url: saveUrl,
-			short_url: "http://localhost:4040/"+url.shortened
+			short_url: req.hostname+'/'+url.shortened
 		});
 	} else {
 		res.json({error: 'Invalid URL'});
