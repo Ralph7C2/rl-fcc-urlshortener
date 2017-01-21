@@ -22,7 +22,7 @@ var urlSchema = new Schema({
 var Url = mongoose.model('Url', urlSchema);
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URL);
+mongoose.connect(process.env.MONGODB_URI);
 
 Count.find(function(err, results) {
 	console.log(results.length);
