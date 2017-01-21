@@ -1,0 +1,24 @@
+{
+  "name": "rl-fcc-urlshortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ralph7C2/rl-fcc-urlshortener.git"
+  },
+  "author": "Ralph Landon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ralph7C2/rl-fcc-urlshortener/issues"
+  },
+  "homepage": "https://github.com/Ralph7C2/rl-fcc-urlshortener#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.7.7",
+    "valid-url": "^1.0.9"
+  }
+}
