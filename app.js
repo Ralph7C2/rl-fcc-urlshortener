@@ -1,3 +1,4 @@
+require('dotenv').load();
 const express = require('express');
 const mongoose = require('mongoose');
 const validUrl = require('valid-url');
@@ -37,6 +38,10 @@ Count.find(function(err, results) {
 		console.log("Count loaded");
 	}
 	console.log(onNumber);
+});
+
+app.get('/', function(req, res) {
+	res.sendfile(__dirname+'/public/index.html');
 });
 
 app.get('/:id', function(req, res) {
